@@ -3,8 +3,8 @@ layout: post
 title:  "Machine Learning 개념에 대한 포스팅"
 date:   2018-07-28 14:31:30
 author: Yeongrong Bak
-categories: Machine Learning
-tags: Machine Learning
+categories: MachineLearning
+tags: MachineLearning
 ---
 
 이 페이지에서는 앞으로 머신 러닝 알고리즘에 대해 제가 공부하고 이해한 개념을 바탕으로 포스팅을 진행하고자 합니다.
