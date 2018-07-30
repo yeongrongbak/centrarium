@@ -69,6 +69,9 @@ descriptions:
   - cat: Issue
     desc: "Issue and situation about data science industry"
 
+  - cat: Database
+    desc: "About database using SQL"
+
 
 # Social icons and sharing options
 #
