@@ -9,10 +9,10 @@ exclude:
   - "/vendor/"
 
 # Site settings
-title: Yeongrong's Blog
+title: YeongRong's Blog
 subtitle: "Interested in Data Science using R and Python"
 email: yeongrong.bak@gmail.com
-name: Yeongrong Bak
+name: YeongRong Bak
 description: >
   Interested in Data Science using R and Python.
 # Base URL of site (i.e. /blog). It should always start with a slash,
