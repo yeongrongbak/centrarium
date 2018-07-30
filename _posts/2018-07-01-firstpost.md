@@ -4,7 +4,7 @@ title:  "안녕하세요. 박영롱의 블로그 입니다."
 date:   2018-07-01 23:32:00
 author: Yeongrong Bak
 categories: Story
-tags:	welcome, firstpost
+tags:	welcome firstpost
 ---
 
 ## 만나서 반갑습니다. 
