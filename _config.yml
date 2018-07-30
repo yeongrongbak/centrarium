@@ -48,17 +48,27 @@ disqus_shortname: yeongrong
 
 # Category descriptions (for archive pages)
 descriptions:
-  - cat: R
-    desc: "R programming for Data analysis"
+  - cat: Story
+    desc: "Any story about me"
 
-  - cat: Python
-    desc: "Python programming for Data analysis"
+  - cat: MachineLearning
+    desc: "About ML Algorithm"
+
+  - cat: DeepLearning
+    desc: "About DL Algorithm"
         
-  - cat: Machine Learning
-    desc: "ML Algorithm"
+  - cat: R&Python
+    desc: "R and Python programming for data analysis"
         
-  - cat: Etc
-    desc: "Any other things"
+  - cat: Visualization
+    desc: "About Data Visualization"
+
+  - cat: DataCompetition
+    desc: "Big data competition that I participated so far"
+
+  - cat: Issue
+    desc: "Issue and situation about data science industry"
+
 
 # Social icons and sharing options
 #
