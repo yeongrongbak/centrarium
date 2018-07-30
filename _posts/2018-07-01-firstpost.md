@@ -5,7 +5,6 @@ date:   2018-07-01 23:32:00
 author: Yeongrong Bak
 categories: Story
 tags:	welcome
-cover:  ""
 ---
 
 ## 만나서 반갑습니다. 박영롱 입니다.
