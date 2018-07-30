@@ -59,7 +59,10 @@ descriptions:
         
   - cat: R&Python
     desc: "R and Python programming for data analysis"
-        
+  
+  - cat: Lecture
+    desc: "Summary of my study"
+
   - cat: Visualization
     desc: "About Data Visualization"
 
@@ -71,6 +74,7 @@ descriptions:
 
   - cat: Database
     desc: "About database using SQL"
+
 
 
 # Social icons and sharing options
