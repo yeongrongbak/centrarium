@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "2017 BigContest) 0.간략 후기"
+title:  "2017 BigContest) 0. 간략 후기"
 date:   2018-07-19 15:00:30
 author: Yeongrong Bak
 categories: DataCompetition
