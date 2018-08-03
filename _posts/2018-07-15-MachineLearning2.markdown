@@ -104,4 +104,4 @@ tags: ML MachineLearning Datamining
 
 ---
 
-참고자료 : Hands-On Machine LEarning with Scikit-Learn & TensorFlow (한빛미디어)
+- 참고자료 : Hands-On Machine Learning with Scikit-Learn & TensorFlow (한빛미디어)
