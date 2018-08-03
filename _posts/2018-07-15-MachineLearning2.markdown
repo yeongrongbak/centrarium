@@ -101,3 +101,7 @@ tags: ML MachineLearning Datamining
 > 2) 훈련 세트를 여러 서브셋으로 나누고 각 모델을 이 서브셋의 조합으로 훈련시키고 나머지 부분으로 검증
 
 > 3) 모델과 하이퍼파라미터가 선택되면 전체 훈련 데이터를 사용해 선택한 하이퍼 파라미터로 최종 모델을 훈련 시키고 테스트 세트로 일반화 오차를 추정
+
+---
+
+참고자료 : Hands-On Machine LEarning with Scikit-Learn & TensorFlow (한빛미디어)
