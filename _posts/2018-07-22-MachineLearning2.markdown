@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "머신러닝(Machine Learning)이란?"
-date:   2018-07-22 10:00:00
+date:   2018-07-15 10:00:00
 author: Yeongrong Bak
 categories: MachineLearning
 tags: ML MachineLearning Datamining
