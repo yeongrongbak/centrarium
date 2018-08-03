@@ -38,35 +38,35 @@ tags: ML MachineLearning Datamining
 
 - **지도학습(Supervised Learning)** : 알고리즘에 주입하는 훈련데이터에 레이블 이라는 원하는 답이 포함되어 있는 문제를 학습해서 새로운 데이터 분류/예측
 
-> 분류(Classification) : 종속 변수의 Class가 범주형(Categorical) 변수 인 경우 
+> -분류(Classification) : 종속 변수의 Class가 범주형(Categorical) 변수 인 경우 
 
-> 예측(Prediction) : 종속 변수의 Class가 연속형(Continuous) 변수 인 경우 
+> -예측(Prediction) : 종속 변수의 Class가 연속형(Continuous) 변수 인 경우 
 
-> 대표 알고리즘 : KNN, Linear Regression, Logistic Regression, Support Vector Machine, Decision Tree, Random Forest, Neural Net
+> -대표 알고리즘 : KNN, Linear Regression, Logistic Regression, Support Vector Machine, Decision Tree, Random Forest, Neural Net
 
 - **비지도학습(Unsupervised Learning)** : 훈련 데이터에 레이블이 없는 문제를 시스템이 아무런 도움 없이 스스로 학습한 뒤 데이터 안에서 패턴을 발견
 
-> 대표 알고리즘 : K-means, Hierarchical Clustering, Expectation Maximization, PCA, Locally Linear Embedding, t-SNE, Apriori, Eclat
+> -대표 알고리즘 : K-means, Hierarchical Clustering, Expectation Maximization, PCA, Locally Linear Embedding, t-SNE, Apriori, Eclat
 
 - **준지도학습(Semisuperviese Learning)** : 레이블이 없는 데이터는 많고 레이블이 있는 데이터는 조금인 케이스
 
-> 대표 알고리즘 : Deep belief network
+> -대표 알고리즘 : Deep belief network
 
 - **강화학습(Reinforcement Learning)** : 환경을 관찰해서 행동을 실행하고 그 결과로 보상(또는 벌점)을 받는 과정을 거친다. 시간이 지나면서 가장 큰 보상을 얻기 위해 정책이라고 부르는 최상의 전략을 스스로 학습하는 과정
 
-> 사용 분야 : 보행 로봇에 사용되는 알고리즘, 알파고 프로그램
+> -사용 분야 : 보행 로봇에 사용되는 알고리즘, 알파고 프로그램
 
 - **배치학습(Batch Learning)** :  시스템이 점진적으로 학습할 수 없는 케이스, 오프라인으로 시스템을 훈련시키고 제품 시스템에 적용시에는 학습한 것을 적용만 함
 
-> 장점 : 간단하고 잘 작동한다
+> -장점 : 간단하고 잘 작동한다
 
-> 단점 : 매일 새롭게 훈련해야 하는 문제가 있다
+> -단점 : 매일 새롭게 훈련해야 하는 문제가 있다
 
 - **온라인학습(Online Learning)** : 데이터를 순차적으로 한 개씩 또는 미니배치(mini-batch)라 부르는 작은 묶은 단위로 주입하여 시스템을 훈련
 
-> 장점 : 매 학습 단계가 빠르고 비용이 적어 시스템은 데이터 도착 즉시 학습 가능
+> -장점 : 매 학습 단계가 빠르고 비용이 적어 시스템은 데이터 도착 즉시 학습 가능
 
-> **학습률(Learning rate)** : 변화하는 데이터에 대해 얼마나 빠르게 적응할 것인가를 결정해주는 파라미터
+> -**학습률(Learning rate)** : 변화하는 데이터에 대해 얼마나 빠르게 적응할 것인가를 결정해주는 파라미터
 
 - **사례기반학습(Instance Based Learning)** : 시스템이 사례를 기억함으로써 학습하고 유사도 측정을 사용해 새로운 데이터에 일반화
 
@@ -74,17 +74,17 @@ tags: ML MachineLearning Datamining
 
 - **과대적합(Overfitting)** : 훈련 데이터에는 너무 잘 맞지만 일반성이 떨어지는 케이스(훈련 데이터에 있는 잡음의 양에 비해 모델이 너무 복잡할때 발생)
 
-> 해결 방법 : 1) 파라미터 수가 적은 모델 선택 2) 모델에 제약을 가한다 3) 훈련 데이터를 더 모은다 4) 훈련 데이터의 잡음을 줄인다
+> -해결 방법 : 1) 파라미터 수가 적은 모델 선택 2) 모델에 제약을 가한다 3) 훈련 데이터를 더 모은다 4) 훈련 데이터의 잡음을 줄인다
 
-> **규제(Regularization)** : 모델을 단순하게 하고 과대적합의 위험을 감소시키기 위해 모델에 제약을 가하는 것
+> -**규제(Regularization)** : 모델을 단순하게 하고 과대적합의 위험을 감소시키기 위해 모델에 제약을 가하는 것
 
 - **과소적합(Underfitting)** : 모델이 너무 단순해서 데이터의 내재된 구조를 학습하지 못할 때 발생
 
-> 해결 방법 : 1) 파라미터 수가 더 많은 모델 선택 2)학습 알고리즘에 더 좋은 변수 제공 3) 모델의 제약을 줄인다
+> -해결 방법 : 1) 파라미터 수가 더 많은 모델 선택 2)학습 알고리즘에 더 좋은 변수 제공 3) 모델의 제약을 줄인다
 
 - **테스트와 검증(Test and Validation)**
 
-> **일반화 오차(Generalization Error)** : 새로운 샘플에 대한 오류 비율
+> -**일반화 오차(Generalization Error)** : 새로운 샘플에 대한 오류 비율
 
 > 훈련 오차가 낮지만 일반화 오차가 크다면 해당 모형은 과대적합된 케이스
 
