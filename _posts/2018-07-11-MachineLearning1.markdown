@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Machine Learning 개념에 대한 포스팅"
-date:   2018-07-12 14:31:30
+date:   2018-07-11 13:00:00
 author: Yeongrong Bak
 categories: MachineLearning
 tags: MachineLearning
