@@ -22,21 +22,22 @@ tags: Competition Bigcon Bigdata
 - 총 세개의 데이터 셋(신평사, 보험사, 통신사)으로 나누었을 때, 각 셋의 변수들 간의 높은 상관 관계가 존재했음 
 > 파생변수 생성 근거로 활용, 추후 상관 관계 고려
 
-![1st_plot](./assets/cor_plot.PNG)
+![cor_plot](https://user-images.githubusercontent.com/40160683/45091967-fa515600-b14e-11e8-8732-e82708829d51.PNG)
+
 
 - 연속형 변수의 경우 0값이 높은 Sparse 데이터인 경우가 많았음 
 > 로그 변환을 적용
 
-![2nd_plot](./assets/sparse_plot.PNG)
+![sparse_plot](https://user-images.githubusercontent.com/40160683/45092027-28cf3100-b14f-11e8-82ae-ac93a61e8b60.PNG)
 
 - 소득을 직업 변수와 함께 그래프로 그려보았을 때, 직업 간 소득의 차이가 명확했음
 > 표준화 작업 진행
 
-![3rd_plot](./assets/job_box.PNG)
+![job_box](https://user-images.githubusercontent.com/40160683/45092035-2ff63f00-b14f-11e8-9ccc-361aed2d17bc.PNG)
 
 - 그 밖에 각 독립변수의 분포 안에서 종속변수의 Proportion을 확인해 보면서 어떤 변수가 분류에 유의미하게 쓰일 지 판단했다
 
-![4th_plot](./assets/prop_plot.PNG)
+![prop_plot](https://user-images.githubusercontent.com/40160683/45092047-3684b680-b14f-11e8-9aaf-ee9586cda3c0.PNG)
 
 - 파생 변수를 생성하는 과정에서 생성에 대한 명확한 로직이나 근거를 만드는 것에 집중했고 이 부분이 매우 중요하다는 것을 알 수 있었다.
 
