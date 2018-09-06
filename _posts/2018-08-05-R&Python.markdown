@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "R) 강력한 데이터 전처리 패키지 dplyr"
-date:   2018-08-02 12:00:00
+date:   2018-08-05 12:00:00
 author: Yeongrong Bak
 categories: R&Python
 tags: R dplyr data-preprocessing
