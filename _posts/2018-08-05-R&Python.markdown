@@ -1,0 +1,112 @@
+---
+layout: post
+title:  "R) 강력한 데이터 전처리 패키지 dplyr"
+date:   2018-08-02 12:00:00
+author: Yeongrong Bak
+categories: R&Python
+tags: R dplyr data-preprocessing
+---
+
+R을 활용해서 데이터를 핸들링 하는 과정에서 R에 내장된 함수 및 기존에 쓰이던 패키지를 활용한 핸들링을 주로 해왔었습니다.
+
+하지만, dplyr 패키지를 활용한 데이터 먼징 작업은 훨씬 직관적이고 활용하기 쉬운 문법으로 인해  R로 데이터를 처리하는 과정의 표준 방법이 되어 가고 있습니다.
+
+따라서 이 방법에 대해 조금 더 숙달해보고자 이 포스팅을 작성하게 됐습니다.
+
+## 1. Preview
+
+- dplyr 패키지에는 **select, filter, group_by, mutate** 등의 함수 존재
+
+- plyr 패키지와 dplyr 패키지를 동시에 사용하는 경우 plyr를 먼저 로딩하는 것이 중요하다. (두 패키지는 같은 이름을 쓰는 함수가 많은데 R에서는 마지막 패키지의 함수가 우선 적용되기 때문)
+
+## 2. 파이프(Pipe)
+
+- 파이프(%>%)를 사용하면 앞의 함수가 반환한 객체를 다음 함수의 첫 번째 인자로 보낸다.
+```
+library(magrittr)
+data(diamonds, package="ggplot2")
+diamonds %>% head(4) %>% dim
+```
+
+## 3. select
+
+- select 함수는 첫 번째 인자로 데이터 프레임 또는 tbl 객체를 받고, 그 다음은 원하는 열들을 인자로 취한다.
+```
+select(diamonds, carat, price)
+diamonds %>% select(carat, price)
+```
+
+- 열 이름에 대해 부분 매칭을 사용해 검색하는 경우 starts_with, ends_with, contains 라는 함수를 사용한다
+```
+diamonds %>% select(starts_with('c'))
+diamonds %>% select(ends_with('e'))
+diamonds %>% select(contains('l'))
+```
+
+## 4. filter
+- 논리 값에 기반해 특정 행을 고를 때 사용한다.
+```
+diamonds %>% filter(cut=="Ideal")
+diamonds %>% filter(price >= 1000)
+diamonds %>% filter(carat>2, price<14000)
+```
+
+- 베이스 R 에서의 방법은 다음과 같았다.
+```
+diamonds[diamonds$cut == "Ideal",]
+```
+
+## 5. slice
+- slice 함수는 행 번호를 가지고 필터링 한다.
+```
+diamonds %>% slice(1:5)
+```
+
+## 6. mutate
+- 새로운 열을 추가하거나 기존의 열로부터 새로운 열을 만들어 추가할 때 사용한다.
+```
+diamonds %>% mutate(price/carat)
+```
+
+- mutate 함수에서는 생성한 변수에 대해 이름을 바로 부여 할 수 있다.
+```
+diamonds %>% select(carat, price) %>% mutate(Ratio=price/carat)
+```
+
+## 7. summarize
+
+- 해당 변수에 대해 요약 통계량을 산출할 때 사용한다.
+```
+summarize(diamonds, mean(price))
+```
+
+- mutate와 마찬가지로 이름 부여가 가능하다.
+```
+diamonds %>%
+  summarize(AvgPrice = mean(price),
+            MedianPrice = median(price),
+            AvgCarat = mean(carat))
+```
+
+## 8. group_by
+
+- 그룹 별로 데이터를 나눠준다. summarize와 함께 사용하면 그룹 별 요약 통계량 산출에 유용하다.
+```
+diamonds %>%
+  group_by(cut) %>%
+  summarize(AvgPrice = mean(price))
+```
+
+## 9. arrange
+
+- 데이터를 오름차순 또는 내림차순으로 정렬하고자 할 때 사용한다.
+(디폴트 값은 오름차순이다.)
+```
+diamonds %>%
+  group_by(cut) %>%
+  summarize(AvgPrice = mean(price), SumCarat = sum(carat)) %>% arrange(AvgPrice)
+```
+
+---
+
+- 출처 : **데이터 과학 입문자를 위한 R**
